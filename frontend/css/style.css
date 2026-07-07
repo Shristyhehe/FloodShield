@@ -109,3 +109,67 @@ padding: 15px;
 margin: 15px auto;
 max-width: 300px;
 }
+.volunteer{
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.volunteer h2{
+  font-size: 2rem;
+}
+
+.volunteer p{
+  max-width: 500px;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+.stats{
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 10px;
+}
+
+.stats > p{
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.stat-container{
+  display : flex;
+justify-content : center;
+gap: 20px;
+flex-wrap: wrap;
+
+}
+
+.stat-card{
+  border-radius: 10px;
+background-color: #002A6D;
+color: #EAF4FF;
+text-align: center;
+padding: 15px;
+min-width: 220px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stat-number{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer{
+  background-color: #002A6D;
+  color: #EAF4FF;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer h2{
+    margin-bottom: 15px;
+}
+
+footer p{
+  margin: 10px 0;
+}
