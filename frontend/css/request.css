@@ -1,0 +1,84 @@
+body{
+  display: flex;
+  background-color: #F5F9FF;
+  color: #002A6D;
+ align-items: center;
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container{
+  max-width: 700px;
+  width: 90%;
+  background-color: #FFFFFF;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0,0, 0.1);
+}
+
+
+.request-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.request-form h2{
+  margin-bottom: 15px;
+}
+
+.request-form p{
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.form-group{
+  display:flex;
+flex-direction:column;
+margin-bottom: 20px;
+  gap: 8px;
+}
+
+label{
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select{
+  width: 100%;
+    padding: 12px;
+    border: 1px solid #BFC8D6;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+textarea{
+  resize: none;
+}
+
+input[type="file"]{
+    font-size: 0.95rem;
+}
+
+
+.submit-btn{
+  background-color: #002A6D;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+.submit-btn:hover{
+  background-color: #011c48;
+  transform: scale(1.05);
+}
+
+

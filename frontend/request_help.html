@@ -1,0 +1,105 @@
+
+<!-- =========================
+     REQUEST HELP FORM
+
+     Purpose:
+     Allow citizens affected
+     by floods to request
+     emergency assistance.
+
+     Contains:
+     - Full Name
+     - Location
+     - Type of Help
+     - Description
+     - Contact Number
+     - Submit Button
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Help</title>
+  <link rel="stylesheet" href="css/request.css">
+</head>
+<body>
+  <div class="container">
+    <form class="request-form">
+      <h2>Request Help</h2>
+      <p>Help us understand your emergency so volunteers can assist you quickly.</p>
+
+      <!--Full Name-->
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input
+         type="text"
+          id="fullname"
+           name="fullname"
+            placeholder="Enter Full Name"
+        required>
+      </div>
+
+     <!--Location-->
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input 
+        type="text" 
+        id="location"
+         name="location"
+          placeholder="Enter Location"
+          required>
+      </div>
+       
+      <!--Type of Help-->
+      <div class="form-group">
+        <label for="help">Type of Help</label>
+        <select
+         id="help"
+          name="help"
+          required>
+          <option value="" disabled selected>Select Help Type</option>
+          <option value="food">Food</option>
+          <option value="medical">Medical</option>
+          <option value="rescue">Rescue</option>
+          <option value="shelter">Shelter</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!--Description-->
+      <div class="form-group">
+        <label for="description"> Description</label>
+        <textarea 
+        id="description"
+        name="description"
+        rows="5"
+        placeholder="Describe Your Situation"
+        required></textarea>
+      </div>
+
+
+         <!--Contact number-->
+      <div class="form-group">
+     <label for="contact">Contact Number</label>
+             <input 
+                type="tel"
+                id="contact"
+                name="contact"
+                placeholder="Enter Contact Number"
+                required>
+     </div>
+
+<!---Submit Button-->
+ <div class="form-group">
+<button class="submit-btn" type="submit">Request Help</button>
+ </div>
+
+
+
+    </form>
+  </div>
+  
+</body>
+</html>

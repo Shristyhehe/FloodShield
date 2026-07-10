@@ -1,0 +1,117 @@
+<!-- =========================
+     REPORT FLOOD FORM
+     Purpose:
+     Allow citizens to report
+     flood incidents.
+
+     Contains:
+     - Location
+     - Severity
+     - Description
+     - Image Upload
+     - Contact Number
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Flood</title>
+  <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+  <div class="container">
+  <form class="report-form">
+    <h2>Report Flood</h2>
+    <p>Help us respond quickly by reporting a flood in your area.</p>
+
+    <!-- Location -->
+      <div class="form-group">
+      <label for="location">Location</label>
+    <input
+     type="text" 
+     id="location"
+      name="location"
+       placeholder="Enter Location"
+       required>
+      </div>
+   
+   
+   <!--Severity-->
+    <div class="form-group">
+ <label>Severity</label>
+    <div class="severity-options">
+      <div class="severity-item">
+       <input 
+      type="radio" 
+       name="severity" 
+        id="low"
+        value="Low"
+        required>
+    <label for="low">Low</label>
+      </div>
+      <div class="severity-item">
+      <input 
+     type="radio"
+      name="severity"
+        id="medium"
+        value="Medium">
+    <label for="medium">Medium</label>
+      </div>
+     
+    <div class="severity-item">
+   <input
+      type="radio"
+       name="severity"
+         id="high"
+         value="High">
+    <label for="high">High</label>
+    </div>
+    
+   </div>
+    </div>
+     <!--Description-->
+       <div class="form-group">
+ <label for="description">Description</label>
+    <textarea
+     id="description"
+     name="description"
+     rows="5"
+     placeholder="Describe the flood situation..."
+     required>
+    </textarea>
+
+       </div>
+   
+    <!--Upload Image-->
+     <div class="form-group">
+   <label for="image">Upload Flood Image</label>
+  <input type="file"
+   id="image"
+   name="image"
+   accept="image/*">
+     </div>
+  
+  <!--Contact number-->
+     <div class="form-group">
+     <label for="contact">Contact Number</label>
+<input 
+type="tel"
+ id="contact"
+ name="contact"
+ placeholder="Enter Contact Number"
+ required>
+     </div>
+
+
+ <!---Submit Button-->
+ <div class="form-group">
+<button class="submit-btn" type="submit">Submit Report</button>
+ </div>
+
+
+  </form>
+    </div>
+</body>
+</html>
